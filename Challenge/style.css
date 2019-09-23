@@ -1,0 +1,59 @@
+body {
+    font-family: 'Monospace', 'Arial';
+    background-color: lavender;
+}
+
+#root {
+    width: 70%;
+    margin: auto;
+    /* border: 1px solid black; */
+}
+
+header {
+    /* border: 1px solid black; */
+    height: 150px;
+    background: url('https://upload.wikimedia.org/wikipedia/en/thumb/c/ca/Studio_Ghibli_logo.svg/1200px-Studio_Ghibli_logo.svg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: skyblue;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+h1 {
+    position: absolute;
+    right: 20%;
+    top: 40px;
+}
+
+#main {
+    margin: 0 5%;
+    /* width: 60%;
+    margin: auto; */
+}
+
+#input-text {
+    width: 400px;
+    text-align: center;
+}
+
+select {
+    margin-bottom: 10px;
+}
+
+select,
+input {
+    font-size: 1em;
+    outline: none;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#submit-btn:active {
+    transform: scale(1.1);
+}
+
+#movie-details {
+    text-align: center;
+}
