@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +9,14 @@
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div id="root">
-        <h1>Ghibli Review App</h1>
+        <header>
+            <h1>Ghibli Review App</h1>
+        </header>
 
+    <div id="main">
         <select name="movies" id="select-movies">
             <option value=""></option>
         </select>
@@ -20,14 +25,17 @@
 
         </div>
 
-        <form action="#">
-            <input type="text" id="input-text">
-            <input type="submit" value="Submit" id="submit-btn">
+        <form action="">
+            <input type="text" id="input-text" placeholder="Write a review here!">
+            <input type="submit" value="Submit Review" id="submit-btn">
         </form>
 
         <ul>
 
         </ul>
     </div>
+        
+    </div>
 </body>
+
 </html>

@@ -19,8 +19,16 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     submitButton.addEventListener('click', (event) => {
         event.preventDefault();
-        const text = document.querySelector('#input-text').value;
-        addListItem(text);
+        const text = document.querySelector('#input-text');
+        if (selectTag.value.length === 0) {
+            return;
+        }
+        if (text.value.length) {
+            addListItem(text.value);
+            text.placeholder = 'Write a review!';
+        } else {
+            text.placeholder = 'You cannot submit a empty review!';
+        }
     })
 })
 
